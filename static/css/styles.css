@@ -45,7 +45,23 @@ h6 {
   padding: 0 var(--wrapper);
 }
 
-/* Button */
+.is-hidden {
+  display: none;
+}
+
+.title__primary, .title__secondary {
+  color: var(--darkBlue);
+  font-size: 2em;
+}
+.title__secondary {
+  font-size: 1.2em;
+}
+
+.description {
+  font-size: 0.8em;
+  margin-bottom: 2.2em;
+}
+
 .btn {
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
   color: var(--veryLightGray);
@@ -79,13 +95,25 @@ h6 {
   margin: 0 calc(-1 * var(--wrapper));
   margin-bottom: 1.2em;
 }
-.hero__title {
-  color: var(--darkBlue);
-  font-size: 2em;
+
+.why-easybank {
+  background: var(--veryLightGray);
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2.5em;
 }
-.hero__description {
-  font-size: 0.8em;
-  margin-bottom: 2.2em;
+.why-easybank .description {
+  margin-bottom: 4em;
+}
+.why-easybank__grid {
+  display: grid;
+}
+
+.easybank-featured img {
+  margin-bottom: 1rem;
+}
+.easybank-featured .description {
+  margin-bottom: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */

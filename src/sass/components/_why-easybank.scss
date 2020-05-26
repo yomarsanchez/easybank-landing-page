@@ -1,0 +1,21 @@
+.why-easybank {
+  background: var(--veryLightGray);
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2.5em;
+  .description {
+    margin-bottom: 4em;
+  }
+  &__grid {
+    display: grid;
+  }
+}
+
+.easybank-featured {
+  img {
+    margin-bottom: 1rem;
+  }
+  .description {
+    margin-bottom: 2em;
+  }
+}

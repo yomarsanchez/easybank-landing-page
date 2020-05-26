@@ -26,17 +26,22 @@ h6 {
   padding: 0 var(--wrapper);
 }
 
-/* Button */
-.btn {
-  background-image: linear-gradient(
-    to right,
-    var(--limeGreen) 0%,
-    var(--brightCyan) 100%
-  );
-  color: var(--veryLightGray);
-  border: 0;
-  padding: 1em 2.5em;
-  border-radius: 2em;
-  font-size: 14px;
-  font-weight: bold;
+.is-hidden {
+  display: none;
+}
+
+.title {
+  &__primary {
+    color: var(--darkBlue);
+    font-size: 2em;
+  }
+  &__secondary {
+    @extend .title__primary;
+    font-size: 1.2em;
+  }
+}
+
+.description {
+  font-size: 0.8em;
+  margin-bottom: 2.2em;
 }
