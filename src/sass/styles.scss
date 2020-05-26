@@ -1,3 +1,21 @@
-body {
-  border: 1px solid hsl(136, 65%, 51%);
-}
+/*!
+ * Easybank landing page
+ */
+
+// scss-docs-start import-stack
+// Configuration
+// @import "functions";
+@import 'variables';
+
+// Layout & components
+@import 'root';
+@import 'globals';
+@import 'components/header';
+@import 'components/hero';
+
+// Helpers
+// @import "helpers";
+
+// Utilities
+// @import "utilities/api";
+// scss-docs-end import-stack

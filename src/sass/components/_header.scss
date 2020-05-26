@@ -1,0 +1,7 @@
+@import 'menu';
+
+.header {
+  display: flex;
+  padding: 1.2em var(--wrapper);
+  justify-content: space-between;
+}

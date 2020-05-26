@@ -1,0 +1,20 @@
+.hero {
+  text-align: center;
+  padding-bottom: 4.8em;
+  &__image {
+    background: url($image-mockups) center bottom no-repeat,
+      url($bg-intro-mobile) center no-repeat;
+    background-size: calc(var(--mobile) - (var(--wrapper) * 2 - 18px)), cover;
+    height: 300px;
+    margin: 0 calc(-1 * var(--wrapper));
+    margin-bottom: 1.2em;
+  }
+  &__title {
+    color: var(--darkBlue);
+    font-size: 2em;
+  }
+  &__description {
+    font-size: 0.8em;
+    margin-bottom: 2.2em;
+  }
+}

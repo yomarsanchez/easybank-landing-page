@@ -7,12 +7,31 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./static/images/favicon-32x32.png"
     />
     <title>Easybank landing page</title>
-    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/styles.css" />
   </head>
   <body>
-    <h1>Easybank landing page</h1>
+    <header class="header">
+      <img src="./static/images/logo.svg" alt="Logo" />
+      <nav class="menu"></nav>
+    </header>
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero__image"></div>
+        <h1 class="hero__title">Next generation digital banking</h1>
+        <p class="hero__description">
+          Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much
+          more.
+        </p>
+        <button type="button" class="btn">Request Invite</button>
+      </div>
+    </section>
   </body>
 </html>
