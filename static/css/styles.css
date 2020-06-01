@@ -86,7 +86,7 @@ h6 {
 .icon__facebook {
   width: 25px;
   height: 25px;
-  background-image: url("../../../static/images/icon-facebook.svg");
+  background-image: url("../images/icon-facebook.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,7 +95,7 @@ h6 {
 .icon__youtube {
   width: 25px;
   height: 25px;
-  background-image: url("../../../static/images/icon-youtube.svg");
+  background-image: url("../images/icon-youtube.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -104,7 +104,7 @@ h6 {
 .icon__twitter {
   width: 25px;
   height: 25px;
-  background-image: url("../../../static/images/icon-twitter.svg");
+  background-image: url("../images/icon-twitter.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,7 +113,7 @@ h6 {
 .icon__pinterest {
   width: 25px;
   height: 25px;
-  background-image: url("../../../static/images/icon-pinterest.svg");
+  background-image: url("../images/icon-pinterest.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -122,7 +122,7 @@ h6 {
 .icon__instagram {
   width: 25px;
   height: 25px;
-  background-image: url("../../../static/images/icon-instagram.svg");
+  background-image: url("../images/icon-instagram.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -130,7 +130,7 @@ h6 {
 }
 
 .menu {
-  background: url("../../static/images/icon-hamburger.svg") no-repeat center;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
   width: 24px;
   height: 12px;
 }
@@ -147,7 +147,7 @@ h6 {
   padding-bottom: 4.8em;
 }
 .hero__image {
-  background: url("../../static/images/image-mockups.png") center bottom no-repeat, url("../../static/images/bg-intro-mobile.svg") center no-repeat;
+  background: url("../images/image-mockups.png") center bottom no-repeat, url("../images/bg-intro-mobile.svg") center no-repeat;
   background-size: calc(var(--mobile) - (var(--wrapper) * 2 - 18px)), cover;
   height: 300px;
   margin: 0 calc(-1 * var(--wrapper));
