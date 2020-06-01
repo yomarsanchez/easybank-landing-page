@@ -76,11 +76,57 @@ h6 {
 .btn {
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
   color: var(--veryLightGray);
-  border: 0;
+  border: none;
   padding: 1em 2.5em;
   border-radius: 2em;
   font-size: 14px;
   font-weight: bold;
+}
+
+.icon__facebook {
+  width: 25px;
+  height: 25px;
+  background-image: url("../../../static/images/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
+}
+.icon__youtube {
+  width: 25px;
+  height: 25px;
+  background-image: url("../../../static/images/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
+}
+.icon__twitter {
+  width: 25px;
+  height: 25px;
+  background-image: url("../../../static/images/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
+}
+.icon__pinterest {
+  width: 25px;
+  height: 25px;
+  background-image: url("../../../static/images/icon-pinterest.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
+}
+.icon__instagram {
+  width: 25px;
+  height: 25px;
+  background-image: url("../../../static/images/icon-instagram.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
 }
 
 .menu {
@@ -162,6 +208,37 @@ h6 {
   font-size: 0.7em;
   margin-top: 1em;
   margin-bottom: 1.5em;
+}
+
+.footer {
+  background: var(--darkBlue);
+  text-align: center;
+  padding: 2.3em 0;
+}
+.footer img {
+  margin-bottom: 1.5em;
+}
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(5, 20px);
+  grid-column-gap: 1.2em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.footer__link {
+  display: block;
+  color: var(--lightGrayishBlue);
+  font-size: 0.9em;
+  text-decoration: none;
+  margin-bottom: 0.6em;
+}
+.footer__link:last-of-type {
+  margin-bottom: 2em;
+}
+.footer__copyright {
+  font-size: 0.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

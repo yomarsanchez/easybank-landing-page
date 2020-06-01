@@ -1,0 +1,31 @@
+.footer {
+  background: var(--darkBlue);
+  text-align: center;
+  padding: 2.3em 0;
+  img {
+    margin-bottom: 1.5em;
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    grid-column-gap: 1.2em;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  &__link {
+    display: block;
+    color: var(--lightGrayishBlue);
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-bottom: 0.6em;
+    &:last-of-type {
+      margin-bottom: 2em;
+    }
+  }
+  &__copyright {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+}
