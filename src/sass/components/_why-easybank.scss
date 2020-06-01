@@ -1,7 +1,7 @@
 .why-easybank {
-  background: var(--veryLightGray);
+  background: var(--lightGrayishBlue);
   text-align: center;
-  padding-top: 4em;
+  padding-top: 3.5em;
   padding-bottom: 2.5em;
   .description {
     margin-bottom: 4em;
@@ -9,13 +9,12 @@
   &__grid {
     display: grid;
   }
-}
-
-.easybank-featured {
-  img {
-    margin-bottom: 1rem;
-  }
-  .description {
-    margin-bottom: 2em;
+  &__feature {
+    img {
+      margin-bottom: 1rem;
+    }
+    .description {
+      margin-bottom: 2em;
+    }
   }
 }

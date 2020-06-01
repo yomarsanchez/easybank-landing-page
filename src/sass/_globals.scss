@@ -30,18 +30,28 @@ h6 {
   display: none;
 }
 
+@mixin title($font-size, $font-weight: 400) {
+  color: var(--darkBlue);
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
 .title {
   &__primary {
-    color: var(--darkBlue);
-    font-size: 2em;
+    @include title(2em);
   }
   &__secondary {
-    @extend .title__primary;
-    font-size: 1.2em;
+    @include title(1.2em);
+  }
+  &__tertiary {
+    @include title(0.85em, 600);
   }
 }
 
 .description {
   font-size: 0.8em;
-  margin-bottom: 2.2em;
+  line-height: 1.6;
+  margin-bottom: 3em;
+  margin-top: 1.5em;
+  font-weight: 600;
 }

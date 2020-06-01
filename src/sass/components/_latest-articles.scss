@@ -1,0 +1,36 @@
+.latest-articles {
+  background: var(--veryLightGray);
+  padding-top: 4.5em;
+  padding-bottom: 2.5em;
+  .title__primary {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+  }
+  &__grid {
+    display: grid;
+    grid-row-gap: 1.5em;
+  }
+  &__item {
+    background: var(--white);
+    border-radius: 0.5em;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &-content {
+      padding: 1em 1.8em;
+    }
+    &-autor {
+      font-size: 0.7em;
+      margin-bottom: 1em;
+      display: block;
+    }
+    &-description {
+      font-size: 0.7em;
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+    }
+  }
+}

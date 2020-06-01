@@ -1,4 +1,5 @@
 .hero {
+  background: var(--veryLightGray);
   text-align: center;
   padding-bottom: 4.8em;
   &__image {
@@ -7,6 +8,6 @@
     background-size: calc(var(--mobile) - (var(--wrapper) * 2 - 18px)), cover;
     height: 300px;
     margin: 0 calc(-1 * var(--wrapper));
-    margin-bottom: 1.2em;
+    margin-bottom: 1.4em;
   }
 }

@@ -49,17 +49,28 @@ h6 {
   display: none;
 }
 
-.title__primary, .title__secondary {
+.title__primary {
   color: var(--darkBlue);
   font-size: 2em;
+  font-weight: 400;
 }
 .title__secondary {
+  color: var(--darkBlue);
   font-size: 1.2em;
+  font-weight: 400;
+}
+.title__tertiary {
+  color: var(--darkBlue);
+  font-size: 0.85em;
+  font-weight: 600;
 }
 
 .description {
   font-size: 0.8em;
-  margin-bottom: 2.2em;
+  line-height: 1.6;
+  margin-bottom: 3em;
+  margin-top: 1.5em;
+  font-weight: 600;
 }
 
 .btn {
@@ -85,6 +96,7 @@ h6 {
 }
 
 .hero {
+  background: var(--veryLightGray);
   text-align: center;
   padding-bottom: 4.8em;
 }
@@ -93,13 +105,13 @@ h6 {
   background-size: calc(var(--mobile) - (var(--wrapper) * 2 - 18px)), cover;
   height: 300px;
   margin: 0 calc(-1 * var(--wrapper));
-  margin-bottom: 1.2em;
+  margin-bottom: 1.4em;
 }
 
 .why-easybank {
-  background: var(--veryLightGray);
+  background: var(--lightGrayishBlue);
   text-align: center;
-  padding-top: 4em;
+  padding-top: 3.5em;
   padding-bottom: 2.5em;
 }
 .why-easybank .description {
@@ -108,12 +120,48 @@ h6 {
 .why-easybank__grid {
   display: grid;
 }
-
-.easybank-featured img {
+.why-easybank__feature img {
   margin-bottom: 1rem;
 }
-.easybank-featured .description {
+.why-easybank__feature .description {
   margin-bottom: 2em;
+}
+
+.latest-articles {
+  background: var(--veryLightGray);
+  padding-top: 4.5em;
+  padding-bottom: 2.5em;
+}
+.latest-articles .title__primary {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+}
+.latest-articles__grid {
+  display: grid;
+  grid-row-gap: 1.5em;
+}
+.latest-articles__item {
+  background: var(--white);
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.latest-articles__item img {
+  width: 100%;
+  object-fit: cover;
+}
+.latest-articles__item-content {
+  padding: 1em 1.8em;
+}
+.latest-articles__item-autor {
+  font-size: 0.7em;
+  margin-bottom: 1em;
+  display: block;
+}
+.latest-articles__item-description {
+  font-size: 0.7em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
