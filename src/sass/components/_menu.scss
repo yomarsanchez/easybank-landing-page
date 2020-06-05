@@ -1,5 +1,27 @@
 .menu {
-  background: url($icon-hamburger) no-repeat center;
-  width: 24px;
-  height: 12px;
+  display: none;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  a {
+    color: var(--grayishBlue);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  li {
+    padding: 0 1em;
+  }
+  &__nav {
+    background: url($icon-hamburger) no-repeat center;
+    width: 24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    &__nav {
+      display: none;
+    }
+  }
 }

@@ -1,3 +1,9 @@
+// TODO : Refactor Hero
+// --> Find another type of more efficient resposive solution
+// --> $image-mockups
+// --> $bg-intro-mobile
+// --> $bg-intro-desktop
+
 .hero {
   background: var(--veryLightGray);
   text-align: center;
@@ -81,7 +87,7 @@
     background: url($bg-intro-desktop) left 43vw top 72% no-repeat;
     &__image {
       // border: 1px solid yellow;
-      background: url($image-mockups) left 132px top -124px no-repeat;
+      background: url($image-mockups) left 84px top -124px no-repeat;
       width: 899px;
       left: 50%;
     }
