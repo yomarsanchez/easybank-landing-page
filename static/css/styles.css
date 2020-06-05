@@ -102,6 +102,12 @@ h6 {
   background-position: center;
   display: inline-flex;
 }
+@media screen and (min-width: 1024px) {
+  .icon__facebook {
+    width: 20px;
+    height: 20px;
+  }
+}
 .icon__youtube {
   width: 25px;
   height: 25px;
@@ -110,6 +116,12 @@ h6 {
   background-size: cover;
   background-position: center;
   display: inline-flex;
+}
+@media screen and (min-width: 1024px) {
+  .icon__youtube {
+    width: 20px;
+    height: 20px;
+  }
 }
 .icon__twitter {
   width: 25px;
@@ -120,6 +132,12 @@ h6 {
   background-position: center;
   display: inline-flex;
 }
+@media screen and (min-width: 1024px) {
+  .icon__twitter {
+    width: 20px;
+    height: 20px;
+  }
+}
 .icon__pinterest {
   width: 25px;
   height: 25px;
@@ -129,6 +147,12 @@ h6 {
   background-position: center;
   display: inline-flex;
 }
+@media screen and (min-width: 1024px) {
+  .icon__pinterest {
+    width: 20px;
+    height: 20px;
+  }
+}
 .icon__instagram {
   width: 25px;
   height: 25px;
@@ -137,6 +161,12 @@ h6 {
   background-size: cover;
   background-position: center;
   display: inline-flex;
+}
+@media screen and (min-width: 1024px) {
+  .icon__instagram {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .menu {
@@ -275,7 +305,7 @@ h6 {
   }
   .hero__image {
     background: url("../images/image-mockups.png") left 84px top -124px no-repeat;
-    width: 899px;
+    width: auto;
     left: 50%;
   }
 }
@@ -374,6 +404,9 @@ h6 {
   margin-bottom: 1.5em;
 }
 @media screen and (min-width: 768px) {
+  .latest-articles .title__primary {
+    text-align: left;
+  }
   .latest-articles__item-content {
     padding: 1em 1.4em;
   }
@@ -397,7 +430,12 @@ h6 {
   text-align: center;
   padding: 2.3em 0;
 }
-.footer img {
+.footer__grid {
+  display: grid;
+  grid-column-gap: 5em;
+}
+.footer__logo {
+  display: block;
   margin-bottom: 1.5em;
 }
 .footer__social {
@@ -422,6 +460,48 @@ h6 {
   font-size: 0.8em;
   margin-top: 1.5em;
   margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-top: 3em;
+  }
+  .footer__link {
+    margin-bottom: 0.8em;
+  }
+  .footer__link:last-of-type {
+    margin-bottom: 0;
+  }
+  .footer__grid {
+    grid-template-columns: 200px 1fr 220px;
+    grid-template-areas: "logo links button " "social links copyright";
+  }
+  .footer__logo {
+    grid-area: logo;
+    text-align: left;
+  }
+  .footer__social {
+    grid-area: social;
+    justify-content: start;
+    align-content: center;
+    margin-bottom: 0;
+  }
+  .footer__links {
+    grid-area: links;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 160px 180px;
+    grid-auto-flow: column;
+    justify-items: start;
+  }
+  .footer__button {
+    grid-area: button;
+    text-align: right;
+  }
+  .footer__copyright {
+    grid-area: copyright;
+    text-align: right;
+    margin-top: 1em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

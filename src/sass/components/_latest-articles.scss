@@ -36,6 +36,9 @@
   }
 
   @media screen and (min-width: 768px) {
+    .title__primary {
+      text-align: left;
+    }
     &__item {
       &-content {
         padding: 1em 1.4em;
