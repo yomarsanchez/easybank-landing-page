@@ -67,7 +67,7 @@ h6 {
   font-weight: 400;
 }
 
-.description {
+.description, .why-easybank__description {
   font-size: 0.8em;
   line-height: 1.6;
   margin-bottom: 3em;
@@ -240,7 +240,7 @@ h6 {
   .hero .title__primary {
     font-size: 2.4em;
   }
-  .hero .description {
+  .hero .description, .hero .why-easybank__description {
     font-size: 1em;
   }
   .hero__main {
@@ -294,17 +294,46 @@ h6 {
   padding-top: 3.5em;
   padding-bottom: 2.5em;
 }
-.why-easybank .description {
+.why-easybank__description {
   margin-bottom: 4em;
 }
 .why-easybank__grid {
   display: grid;
+  grid-gap: 1.6em;
 }
 .why-easybank__feature img {
   margin-bottom: 1rem;
 }
-.why-easybank__feature .description {
+.why-easybank__feature .description, .why-easybank__feature .why-easybank__description {
   margin-bottom: 2em;
+}
+@media screen and (min-width: 768px) {
+  .why-easybank {
+    padding-top: 5em;
+    text-align: left;
+  }
+  .why-easybank__description {
+    max-width: 75%;
+  }
+  .why-easybank__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .why-easybank__description {
+    max-width: 55%;
+  }
+  .why-easybank__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .why-easybank__description {
+    max-width: 50%;
+  }
+  .why-easybank__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .latest-articles {
@@ -319,12 +348,13 @@ h6 {
 }
 .latest-articles__grid {
   display: grid;
-  grid-row-gap: 1.5em;
+  grid-gap: 1.6em;
 }
 .latest-articles__item {
   background: var(--white);
   border-radius: 0.5em;
   overflow: hidden;
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
 }
 .latest-articles__item img {
   width: 100%;
@@ -342,6 +372,24 @@ h6 {
   font-size: 0.7em;
   margin-top: 1em;
   margin-bottom: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  .latest-articles__item-content {
+    padding: 1em 1.4em;
+  }
+  .latest-articles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .latest-articles__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .latest-articles__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .footer {
