@@ -10,4 +10,88 @@
     margin: 0 calc(-1 * var(--wrapper));
     margin-bottom: 1.4em;
   }
+
+  @media screen and (min-width: 768px) {
+    background: url($bg-intro-desktop) left 35vw top 75% no-repeat;
+    background-size: 1230px;
+    padding-bottom: 0;
+    &__main {
+      // border: 1px solid blue;
+      display: grid;
+      grid-template-columns: 315px 1fr;
+      grid-template-areas: 'content image';
+      min-height: 656px;
+      align-items: center;
+    }
+    &__image {
+      // border: 1px solid green;
+      grid-area: image;
+      background: none;
+      position: absolute;
+      background: url($image-mockups) left 25px top -124px no-repeat;
+      background-size: auto;
+      height: 818px;
+      width: 367px;
+      right: 0;
+      margin: 0;
+    }
+    &__content {
+      // border: 1px solid green;
+      grid-area: content;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    background: url($bg-intro-desktop) left 44vw top 71% no-repeat;
+    .title__primary {
+      font-size: 2.4em;
+    }
+    .description {
+      font-size: 1em;
+    }
+    &__main {
+      grid-template-columns: 460px 1fr;
+    }
+    &__image {
+      // border: 1px solid brown;
+      background: url($image-mockups) left 188px top -124px no-repeat;
+      width: 567px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background: url($bg-intro-desktop) left 43vw top 70% no-repeat;
+    &__image {
+      // border: 1px solid purple;
+      background: url($image-mockups) left 168px top -124px no-repeat;
+      width: 667px;
+    }
+  }
+  @media screen and (min-width: 1366px) {
+    background: url($bg-intro-desktop) left 41vw top 70% no-repeat;
+    &__image {
+      // border: 1px solid cyan;
+      background: url($image-mockups) left 148px top -124px no-repeat;
+      width: 767px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background: url($bg-intro-desktop) left 43vw top 72% no-repeat;
+    &__image {
+      // border: 1px solid yellow;
+      background: url($image-mockups) left 132px top -124px no-repeat;
+      width: 899px;
+      left: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    background: url($bg-intro-desktop) left 47vw top 70% no-repeat;
+    &__image {
+      // border: 1px solid red;
+      background: url($image-mockups) left 132px top -124px no-repeat;
+    }
+  }
 }

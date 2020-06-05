@@ -8,6 +8,14 @@
   border: none;
   padding: 1em 2.5em;
   border-radius: 2em;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 0.8em;
+  font-weight: 400;
+  user-select: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
 }

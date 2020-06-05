@@ -24,6 +24,8 @@ h6 {
 
 .wrapper {
   padding: 0 var(--wrapper);
+  max-width: var(--desktop);
+  margin: auto;
 }
 
 .is-hidden {
@@ -44,7 +46,7 @@ h6 {
     @include title(1.2em);
   }
   &__tertiary {
-    @include title(0.85em, 600);
+    @include title(0.85em);
   }
 }
 
@@ -53,5 +55,5 @@ h6 {
   line-height: 1.6;
   margin-bottom: 3em;
   margin-top: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
 }

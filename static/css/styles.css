@@ -13,7 +13,7 @@
   --white: hsl(0, 0%, 100%);
   /* Layout */
   --mobile: 375px;
-  --desktop: 1440px;
+  --desktop: 1112px;
   --wrapper: 24px;
 }
 
@@ -43,6 +43,8 @@ h6 {
 
 .wrapper {
   padding: 0 var(--wrapper);
+  max-width: var(--desktop);
+  margin: auto;
 }
 
 .is-hidden {
@@ -62,7 +64,7 @@ h6 {
 .title__tertiary {
   color: var(--darkBlue);
   font-size: 0.85em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .description {
@@ -70,7 +72,7 @@ h6 {
   line-height: 1.6;
   margin-bottom: 3em;
   margin-top: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn {
@@ -79,8 +81,16 @@ h6 {
   border: none;
   padding: 1em 2.5em;
   border-radius: 2em;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 0.8em;
+  font-weight: 400;
+  user-select: none;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
 }
 
 .icon__facebook {
@@ -139,6 +149,8 @@ h6 {
   display: flex;
   padding: 1.2em var(--wrapper);
   justify-content: space-between;
+  max-width: var(--desktop);
+  margin: auto;
 }
 
 .hero {
@@ -152,6 +164,89 @@ h6 {
   height: 300px;
   margin: 0 calc(-1 * var(--wrapper));
   margin-bottom: 1.4em;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url("../images/bg-intro-desktop.svg") left 35vw top 75% no-repeat;
+    background-size: 1230px;
+    padding-bottom: 0;
+  }
+  .hero__main {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    grid-template-areas: "content image";
+    min-height: 656px;
+    align-items: center;
+  }
+  .hero__image {
+    grid-area: image;
+    background: none;
+    position: absolute;
+    background: url("../images/image-mockups.png") left 25px top -124px no-repeat;
+    background-size: auto;
+    height: 818px;
+    width: 367px;
+    right: 0;
+    margin: 0;
+  }
+  .hero__content {
+    grid-area: content;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: url("../images/bg-intro-desktop.svg") left 44vw top 71% no-repeat;
+  }
+  .hero .title__primary {
+    font-size: 2.4em;
+  }
+  .hero .description {
+    font-size: 1em;
+  }
+  .hero__main {
+    grid-template-columns: 460px 1fr;
+  }
+  .hero__image {
+    background: url("../images/image-mockups.png") left 188px top -124px no-repeat;
+    width: 567px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    background: url("../images/bg-intro-desktop.svg") left 43vw top 70% no-repeat;
+  }
+  .hero__image {
+    background: url("../images/image-mockups.png") left 168px top -124px no-repeat;
+    width: 667px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero {
+    background: url("../images/bg-intro-desktop.svg") left 41vw top 70% no-repeat;
+  }
+  .hero__image {
+    background: url("../images/image-mockups.png") left 148px top -124px no-repeat;
+    width: 767px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background: url("../images/bg-intro-desktop.svg") left 43vw top 72% no-repeat;
+  }
+  .hero__image {
+    background: url("../images/image-mockups.png") left 132px top -124px no-repeat;
+    width: 899px;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero {
+    background: url("../images/bg-intro-desktop.svg") left 47vw top 70% no-repeat;
+  }
+  .hero__image {
+    background: url("../images/image-mockups.png") left 132px top -124px no-repeat;
+  }
 }
 
 .why-easybank {
@@ -229,6 +324,7 @@ h6 {
   display: block;
   color: var(--lightGrayishBlue);
   font-size: 0.9em;
+  font-weight: 400;
   text-decoration: none;
   margin-bottom: 0.6em;
 }
