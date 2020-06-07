@@ -2,9 +2,11 @@
 
 .header {
   display: flex;
+  background: var(--white);
   padding: 1.2em var(--wrapper);
   justify-content: space-between;
   max-width: var(--desktop);
+  position: relative;
   margin: auto;
   &__logo {
     display: flex;

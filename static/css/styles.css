@@ -176,33 +176,71 @@ h6 {
   margin: 0;
   padding: 0;
 }
-.menu a {
+.menu__item {
+  padding: 0 1em;
+}
+.menu__link {
   color: var(--grayishBlue);
   text-decoration: none;
   font-size: 0.8em;
   font-weight: 400;
 }
-.menu li {
-  padding: 0 1em;
-}
-.menu__nav {
+.menu__hamburger {
   background: url("../images/icon-hamburger.svg") no-repeat center;
   width: 24px;
+}
+.menu__checkbox {
+  display: none;
+}
+.menu__checkbox:checked ~ .menu {
+  display: block;
+  background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 100%);
+  position: absolute;
+  height: 100vh;
+  padding: var(--wrapper) var(--wrapper);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.menu__checkbox:checked ~ .menu__hamburger {
+  background: url("../images/icon-close.svg") no-repeat center;
+}
+.menu__checkbox:checked ~ .menu .menu__item {
+  padding: 0;
+  background: var(--white);
+}
+.menu__checkbox:checked ~ .menu .menu__item:first-child {
+  padding-top: 0.8em;
+  border-radius: 0.3em 0.3em 0 0;
+}
+.menu__checkbox:checked ~ .menu .menu__item:last-child {
+  padding-bottom: 0.8em;
+  border-radius: 0 0 0.3em 0.3em;
+}
+.menu__checkbox:checked ~ .menu .menu__link {
+  padding: 0.6em 1em;
+  display: block;
+  color: var(--darkBlue);
+  font-size: 1em;
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .menu {
     display: flex;
   }
-  .menu__nav {
+  .menu__hamburger {
     display: none;
   }
 }
 
 .header {
   display: flex;
+  background: var(--white);
   padding: 1.2em var(--wrapper);
   justify-content: space-between;
   max-width: var(--desktop);
+  position: relative;
   margin: auto;
 }
 .header__logo {
@@ -236,11 +274,13 @@ h6 {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: url("../images/bg-intro-desktop.svg") left 35vw top 75% no-repeat;
-    background-size: 1230px;
     padding-bottom: 0;
   }
   .hero__main {
+    background: url("../images/bg-intro-desktop.svg") left 35vw top 75% no-repeat;
+    background-size: 1230px;
+  }
+  .hero__grid {
     display: grid;
     grid-template-columns: 315px 1fr;
     grid-template-areas: "content image";
@@ -264,9 +304,6 @@ h6 {
   }
 }
 @media screen and (min-width: 1024px) {
-  .hero {
-    background: url("../images/bg-intro-desktop.svg") left 44vw top 71% no-repeat;
-  }
   .hero .title__primary {
     font-size: 2.4em;
   }
@@ -274,6 +311,9 @@ h6 {
     font-size: 1em;
   }
   .hero__main {
+    background: url("../images/bg-intro-desktop.svg") left 44vw top 71% no-repeat;
+  }
+  .hero__grid {
     grid-template-columns: 460px 1fr;
   }
   .hero__image {
@@ -282,7 +322,7 @@ h6 {
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero {
+  .hero__main {
     background: url("../images/bg-intro-desktop.svg") left 43vw top 70% no-repeat;
   }
   .hero__image {
@@ -291,7 +331,7 @@ h6 {
   }
 }
 @media screen and (min-width: 1366px) {
-  .hero {
+  .hero__main {
     background: url("../images/bg-intro-desktop.svg") left 41vw top 70% no-repeat;
   }
   .hero__image {
@@ -300,7 +340,7 @@ h6 {
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero {
+  .hero__main {
     background: url("../images/bg-intro-desktop.svg") left 43vw top 72% no-repeat;
   }
   .hero__image {
@@ -310,7 +350,7 @@ h6 {
   }
 }
 @media screen and (min-width: 1920px) {
-  .hero {
+  .hero__main {
     background: url("../images/bg-intro-desktop.svg") left 47vw top 70% no-repeat;
   }
   .hero__image {
@@ -369,7 +409,7 @@ h6 {
 .latest-articles {
   background: var(--veryLightGray);
   padding-top: 4.5em;
-  padding-bottom: 2.5em;
+  padding-bottom: 4em;
 }
 .latest-articles .title__primary {
   text-align: center;

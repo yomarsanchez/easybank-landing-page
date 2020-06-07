@@ -18,31 +18,44 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="/">
+      <a class="header__logo" href="./">
         <img src="./static/images/logo.svg" alt="Logo" />
       </a>
+      <input type="checkbox" id="menu" class="menu__checkbox" />
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Contact</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Careers</a>
+        </li>
       </ul>
-      <nav class="menu__nav"></nav>
+      <label for="menu" class="menu__hamburger"></label>
       <button type="button" class="btn">Request Invite</button>
     </header>
     <section class="hero">
-      <div class="wrapper">
-        <div class="hero__main">
-          <div class="hero__image"></div>
-          <div class="hero__content">
-            <h1 class="title__primary">Next generation digital banking</h1>
-            <p class="description">
-              Take your financial life online. Your Easybank account will be a
-              one-stop-shop for spending, saving, budgeting, investing, and much
-              more.
-            </p>
-            <button type="button" class="btn">Request Invite</button>
+      <div class="hero__main">
+        <div class="wrapper">
+          <div class="hero__grid">
+            <div class="hero__image"></div>
+            <div class="hero__content">
+              <h1 class="title__primary">Next generation digital banking</h1>
+              <p class="description">
+                Take your financial life online. Your Easybank account will be a
+                one-stop-shop for spending, saving, budgeting, investing, and
+                much more.
+              </p>
+              <button type="button" class="btn">Request Invite</button>
+            </div>
           </div>
         </div>
       </div>
@@ -208,5 +221,20 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      const menu = document.querySelector('#menu')
+      const mediaScreen = window.matchMedia('screen and (min-width: 1024px)')
+      mediaScreen.addListener(handleMediaScreen)
+
+      /**
+       * Set the checked attribute of checkbox menu to false
+       */
+      function handleMediaScreen(event) {
+        if (event.matches && menu.checked) {
+          console.log('Set checked to false')
+          menu.checked = false
+        }
+      }
+    </script>
   </body>
 </html>
