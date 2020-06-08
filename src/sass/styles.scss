@@ -4,23 +4,17 @@
 
 // scss-docs-start import-stack
 // Configuration
-// @import "functions";
 @import 'variables';
 
 // Layout & components
 @import 'root';
 @import 'globals';
 @import 'components/button';
-@import 'components/icon';
 @import 'components/header';
 @import 'components/hero';
 @import 'components/why-easybank';
 @import 'components/latest-articles';
 @import 'components/footer';
 
-// Helpers
-// @import "helpers";
-
 // Utilities
-// @import "utilities/api";
 // scss-docs-end import-stack

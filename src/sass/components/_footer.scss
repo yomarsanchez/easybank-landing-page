@@ -17,6 +17,11 @@
     justify-content: center;
     margin-bottom: 2em;
   }
+  &__icon {
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+  }
   &__link {
     display: block;
     color: var(--lightGrayishBlue);
@@ -49,19 +54,20 @@
         'social links copyright';
     }
     &__logo {
-      // border: 1px solid springgreen;
       grid-area: logo;
       text-align: left;
     }
     &__social {
-      // border: 1px solid springgreen;
       grid-area: social;
       justify-content: start;
       align-content: center;
       margin-bottom: 0;
     }
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
     &__links {
-      // border: 1px solid springgreen;
       grid-area: links;
       display: grid;
       grid-template-rows: repeat(3, 1fr);
@@ -70,12 +76,10 @@
       justify-items: start;
     }
     &__button {
-      // border: 1px solid springgreen;
       grid-area: button;
       text-align: right;
     }
     &__copyright {
-      // border: 1px solid springgreen;
       grid-area: copyright;
       text-align: right;
       margin-top: 1em;

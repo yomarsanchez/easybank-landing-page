@@ -1,8 +1,8 @@
 .why-easybank {
   background: var(--lightGrayishBlue);
   text-align: center;
-  padding-top: 3.5em;
-  padding-bottom: 2.5em;
+  padding-top: 4em;
+  padding-bottom: 3em;
   &__description {
     @extend .description;
     margin-bottom: 4em;
@@ -13,7 +13,7 @@
   }
   &__feature {
     img {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5em;
     }
     .description {
       margin-bottom: 2em;
@@ -24,7 +24,8 @@
     padding-top: 5em;
     text-align: left;
     &__description {
-      max-width: 75%;
+      max-width: 90%;
+      font-size: 1em;
     }
     &__grid {
       grid-template-columns: repeat(2, 1fr);
@@ -33,7 +34,7 @@
 
   @media screen and (min-width: 1024px) {
     &__description {
-      max-width: 55%;
+      max-width: 65%;
     }
     &__grid {
       grid-template-columns: repeat(3, 1fr);
@@ -42,7 +43,7 @@
 
   @media screen and (min-width: 1280px) {
     &__description {
-      max-width: 50%;
+      max-width: 60%;
     }
     &__grid {
       grid-template-columns: repeat(4, 1fr);

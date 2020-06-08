@@ -79,10 +79,10 @@ h6 {
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
   color: var(--veryLightGray);
   border: none;
-  padding: 1em 2.4em;
+  padding: 1em 2.5em;
   border-radius: 2em;
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: 500;
   user-select: none;
   cursor: pointer;
 }
@@ -91,82 +91,6 @@ h6 {
 }
 .btn:active {
   transform: scale(0.98);
-}
-
-.icon__facebook {
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-flex;
-}
-@media screen and (min-width: 1024px) {
-  .icon__facebook {
-    width: 20px;
-    height: 20px;
-  }
-}
-.icon__youtube {
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-flex;
-}
-@media screen and (min-width: 1024px) {
-  .icon__youtube {
-    width: 20px;
-    height: 20px;
-  }
-}
-.icon__twitter {
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-flex;
-}
-@media screen and (min-width: 1024px) {
-  .icon__twitter {
-    width: 20px;
-    height: 20px;
-  }
-}
-.icon__pinterest {
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/icon-pinterest.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-flex;
-}
-@media screen and (min-width: 1024px) {
-  .icon__pinterest {
-    width: 20px;
-    height: 20px;
-  }
-}
-.icon__instagram {
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/icon-instagram.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-flex;
-}
-@media screen and (min-width: 1024px) {
-  .icon__instagram {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 .menu {
@@ -361,8 +285,8 @@ h6 {
 .why-easybank {
   background: var(--lightGrayishBlue);
   text-align: center;
-  padding-top: 3.5em;
-  padding-bottom: 2.5em;
+  padding-top: 4em;
+  padding-bottom: 3em;
 }
 .why-easybank__description {
   margin-bottom: 4em;
@@ -372,7 +296,7 @@ h6 {
   grid-gap: 1.6em;
 }
 .why-easybank__feature img {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5em;
 }
 .why-easybank__feature .description, .why-easybank__feature .why-easybank__description {
   margin-bottom: 2em;
@@ -383,7 +307,8 @@ h6 {
     text-align: left;
   }
   .why-easybank__description {
-    max-width: 75%;
+    max-width: 90%;
+    font-size: 1em;
   }
   .why-easybank__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -391,7 +316,7 @@ h6 {
 }
 @media screen and (min-width: 1024px) {
   .why-easybank__description {
-    max-width: 55%;
+    max-width: 65%;
   }
   .why-easybank__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -399,7 +324,7 @@ h6 {
 }
 @media screen and (min-width: 1280px) {
   .why-easybank__description {
-    max-width: 50%;
+    max-width: 60%;
   }
   .why-easybank__grid {
     grid-template-columns: repeat(4, 1fr);
@@ -485,6 +410,11 @@ h6 {
   justify-content: center;
   margin-bottom: 2em;
 }
+.footer__icon {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+}
 .footer__link {
   display: block;
   color: var(--lightGrayishBlue);
@@ -524,6 +454,10 @@ h6 {
     justify-content: start;
     align-content: center;
     margin-bottom: 0;
+  }
+  .footer__icon {
+    width: 20px;
+    height: 20px;
   }
   .footer__links {
     grid-area: links;
